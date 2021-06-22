@@ -9,6 +9,11 @@ def hello_world():
     msg = 'Hello World!'
     return msg
 
+@app.route('/test')
+def test():
+    msg = 'Deploy test'
+    return msg
+
 def attach():
   if os.environ.get('WERKZEUG_RUN_MAIN'):
     print('Connecting to debugger...')
